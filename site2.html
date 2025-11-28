@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Cake e Cia - Bolos e Doces Personalizados para Festas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a23; /* Fundo navy escuro da logo */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #0a0a23;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #ffc0cb; /* Rosa pink da logo */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .logo-sub {
+            font-size: 1.2em;
+            color: #add8e6; /* Azul claro da logo */
+            margin: 5px 0 0 0;
+        }
+        /* Placeholder para a imagem da logo - substitua pela URL real da imagem */
+        .logo-img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffc0cb;
+        }
+        .hero {
+            background: linear-gradient(rgba(10,10,35,0.8), rgba(10,10,35,0.8)), url('data:image/svg+xml;base64,...') center/cover; /* Adicione imagem de fundo festiva aqui */
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: #ffc0cb;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #add8e6;
+        }
+        .whatsapp-cta {
+            background-color: #25D366; /* Verde WhatsApp */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-cta:hover {
+            background-color: #128C7E;
+        }
+        .products {
+            padding: 60px 0;
+            background-color: rgba(255,255,255,0.05);
+        }
+        .products h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            color: #ffc0cb;
+            margin-bottom: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            color: #add8e6;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+        }
+        .product-card p {
+            font-size: 1.1em;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #ffc0cb;
+            font-weight: bold;
+        }
+        .order-button {
+            background-color: #add8e6;
+            color: #0a0a23;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .order-button:hover {
+            background-color: #87CEEB;
+        }
+        .about {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .about h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #add8e6;
+        }
+        .testimonials {
+            padding: 60px 0;
+            background-color: rgba(255,192,203,0.1);
+        }
+        .testimonials h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            color: #ffc0cb;
+            margin-bottom: 40px;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .testimonial {
+            background: rgba(173,216,230,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+        }
+        .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .contact h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #add8e6;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #add8e6;
+            border-radius: 5px;
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+        .contact button {
+            background-color: #ffc0cb;
+            color: #0a0a23;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            color: #add8e6;
+        }
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .whatsapp-fixed a {
+            display: block;
+            background-color: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .whatsapp-fixed a:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .logo {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="whatsapp-fixed">
+        <a href="https://wa.me/+55 65 9211-0489" target="_blank">📱</a>
+    </div>
+
+    <header>
+        <div class="container">
+            <!-- Substitua src pela URL da imagem da logo -->
+            <img src="logo-cold-cake.png" alt="Cold Cake e Cia Logo" class="logo-img">
+            <h1 class="logo">Cold Cake</h1>
+            <p class="logo-sub">e Cia</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Encomende</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Bolos e Doces para Festas Inesquecíveis!</h1>
+            <p>Personalize sua celebração com delícias artesanais feitas com amor. Encomende agora e surpreenda seus convidados!</p>
+            <a href="https://wa.me/+55 65 9211-0489?text=Olá! Gostaria de encomendar bolos e doces para uma festa." class="whatsapp-cta">Fale pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2>Nossas Especialidades</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/ffc0cb/ffffff?text=Bolo+de+Aniversário" alt="Bolo de Aniversário">
+                    <h3>Bolo de Aniversário Personalizado</h3>
+                    <p>Designs temáticos com recheios variados. Perfeito para crianças e adultos.</p>
+                    <div class="price">A partir de R$ 89,90</div>
+                    <a href="https://wa.me/+55 65 9211-0489?text=Interesse no Bolo de Aniversário" class="order-button">Encomendar</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/add8e6/ffffff?text=Doces+para+Festa" alt="Doces para Festa">
+                    <h3>Docinhos Gourmet</h3>
+                    <p>Brigadeiros, cupcakes e trufas em embalagens elegantes para mesas de doces.</p>
+                    <div class="price">R$ 2,50/unidade</div>
+                    <a href="https://wa.me/+55 65 9211-0489?text=Interesse nos Docinhos Gourmet" class="order-button">Encomendar</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/ffc0cb/ffffff?text=Mesa+de+Doces" alt="Mesa de Doces">
+                    <h3>Montagem Completa de Mesa</h3>
+                    <p>Pacote com bolos, doces e decoração. Ideal para casamentos e eventos.</p>
+                    <div class="price">A partir de R$ 499,90</div>
+                    <a href="https://wa.me/+55 65 9211-0489?text=Interesse na Mesa de Doces" class="order-button">Encomendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre a Cold Cake e Cia</h2>
+            <p>Especializados em bolos e doces para festas, usamos ingredientes frescos e designs exclusivos para tornar cada celebração única. Atendemos com agilidade via WhatsApp!</p>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2>O Que Nossos Clientes Dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Bolo incrível para o aniversário do meu filho! Entrega rápida e sabor divino."</p>
+                    <cite>- Ana Silva</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Docinhos perfeitos para o chá de bebê. Todo mundo elogiou!"</p>
+                    <cite>- João Santos</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Mesa de doces transformou nossa festa. Recomendo de olhos fechados."</p>
+                    <cite>- Maria Oliveira</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Faça Sua Encomenda</h2>
+            <p>Preencha o formulário ou clique no WhatsApp para orçamentos personalizados.</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <input type="tel" placeholder="Seu Telefone" required>
+                <textarea rows="4" placeholder="Detalhes: tipo de festa, quantidade, data..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="https://wa.me/+55 65 9211-0489?text=Olá! Quero fazer uma encomenda de bolos e doces." class="whatsapp-cta">Ou Fale Direto no WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cold Cake e Cia. Todos os direitos reservados. | WhatsApp: (65) 99211-0489</p>
+        </div>
+    </footer>
+</body>
+</html>
