@@ -1,53 +1,351 @@
-Excelente! Vou verificar o conteúdo dos arquivos e criar um preview visual:
-Action: file_editor view /app/coldcake-site/index.html
-Observation: /app/coldcake-site/index.html:
-1|<!DOCTYPE html>
-2|<html lang="pt-BR">
-3|<head>
-4|    <meta charset="UTF-8">
-5|    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6|    <title>Cold Cake e Cia - Bolos e Doces Artesanais</title>
-7|    <link rel="stylesheet" href="styles.css">
-8|    <link rel="preconnect" href="https://fonts.googleapis.com">
-9|    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-10|    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-11|</head>
-12|<body>
-13|    <!-- Botão WhatsApp Flutuante -->
-14|    <a href="https://wa.me/5565999999999" class="whatsapp-float" target="_blank" aria-label="Contato WhatsApp">
-15|        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-16|            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-17|        </svg>
-18|    </a>
-19|
-20|    <!-- Header -->
-21|    <header class="header">
-22|        <div class="container">
-23|            <div class="logo">
-24|                <img src="https://customer-assets.emergentagent.com/job_15f0c1e0-4211-46ea-8e13-8e7445f78c68/artifacts/0w8y8d0o_grok_image_12bx79.jpg" alt="Cold Cake e Cia">
-25|            </div>
-26|            <nav class="nav">
-27|                <a href="#home">Início</a>
-28|                <a href="#bolos-festa">Bolos de Festa</a>
-29|                <a href="#bolos-aniversario">Aniversário</a>
-30|                <a href="#doces-gourmet">Doces Gourmet</a>
-31|                <a href="#doces">Doces</a>
-32|                <a href="#bolos-personalizados">Personalizados</a>
-33|                <a href="#sobre">Sobre</a>
-34|                <a href="https://wa.me/5565999999999" class="cta-button" target="_blank">Faça seu Pedido</a>
-35|            </nav>
-36|            <button class="menu-toggle" aria-label="Menu">
-37|                <span></span>
-38|                <span></span>
-39|                <span></span>
-40|            </button>
-41|        </div>
-42|    </header>
-43|
-44|    <!-- Hero Section -->
-45|    <section id="home" class="hero">
-46|        <div class="hero-content">
-47|            <h1 class="hero-title">Momentos Doces, Memórias Inesquecíveis</h1>
-48|            <p class="hero-subtitle">Criamos bolos e doces artesanais que transformam suas celebrações em experiências únicas</p>
-49|            <a href="https://wa.me/5565999999999" class="hero-button" target="_blank">
-50|                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+Perfeito! Agora vou criar o site completo em HTML/CSS/JS puro para a Cold Cake e Cia:
+Action: file_editor create /app/coldcake-site/index.html --file-text "<!DOCTYPE html>
+<html lang=\"pt-BR\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Cold Cake e Cia - Bolos e Doces Artesanais</title>
+    <link rel=\"stylesheet\" href=\"styles.css\">
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+    <link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap\" rel=\"stylesheet\">
+</head>
+<body>
+    <!-- Botão WhatsApp Flutuante -->
+    <a href=\"https://wa.me/5565999999999\" class=\"whatsapp-float\" target=\"_blank\" aria-label=\"Contato WhatsApp\">
+        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\">
+            <path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z\"/>
+        </svg>
+    </a>
+
+    <!-- Header -->
+    <header class=\"header\">
+        <div class=\"container\">
+            <div class=\"logo\">
+                <img src=\"https://customer-assets.emergentagent.com/job_15f0c1e0-4211-46ea-8e13-8e7445f78c68/artifacts/0w8y8d0o_grok_image_12bx79.jpg\" alt=\"Cold Cake e Cia\">
+            </div>
+            <nav class=\"nav\">
+                <a href=\"#home\">Início</a>
+                <a href=\"#bolos-festa\">Bolos de Festa</a>
+                <a href=\"#bolos-aniversario\">Aniversário</a>
+                <a href=\"#doces-gourmet\">Doces Gourmet</a>
+                <a href=\"#doces\">Doces</a>
+                <a href=\"#bolos-personalizados\">Personalizados</a>
+                <a href=\"#sobre\">Sobre</a>
+                <a href=\"https://wa.me/5565999999999\" class=\"cta-button\" target=\"_blank\">Faça seu Pedido</a>
+            </nav>
+            <button class=\"menu-toggle\" aria-label=\"Menu\">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id=\"home\" class=\"hero\">
+        <div class=\"hero-content\">
+            <h1 class=\"hero-title\">Momentos Doces, Memórias Inesquecíveis</h1>
+            <p class=\"hero-subtitle\">Criamos bolos e doces artesanais que transformam suas celebrações em experiências únicas</p>
+            <a href=\"https://wa.me/5565999999999\" class=\"hero-button\" target=\"_blank\">
+                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\">
+                    <path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z\"/>
+                </svg>
+                Peça pelo WhatsApp
+            </a>
+        </div>
+        <div class=\"hero-decoration\"></div>
+    </section>
+
+    <!-- Galeria Principal -->
+    <section class=\"gallery-section\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Nossos Destaques</h2>
+            <div class=\"gallery-container\">
+                <button class=\"gallery-control prev\" aria-label=\"Anterior\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">
+                        <polyline points=\"15 18 9 12 15 6\"></polyline>
+                    </svg>
+                </button>
+                <div class=\"gallery\">
+                    <div class=\"gallery-track\">
+                        <div class=\"gallery-item active\">
+                            <img src=\"https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMGNha2VzfGVufDB8fHx8MTc2NDM0OTQyMHww&ixlib=rb-4.1.0&q=85\" alt=\"Bolo de Aniversário\">
+                        </div>
+                        <div class=\"gallery-item\">
+                            <img src=\"https://images.unsplash.com/photo-1571622840901-92ae138bd36e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxiaXJ0aGRheSUyMGNha2VzfGVufDB8fHx8MTc2NDM0OTQyMHww&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Elegante\">
+                        </div>
+                        <div class=\"gallery-item\">
+                            <img src=\"https://images.unsplash.com/photo-1624966436626-77482d9c7cc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxkZWNvcmF0ZWQlMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0MjZ8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Black Forest\">
+                        </div>
+                        <div class=\"gallery-item\">
+                            <img src=\"https://images.unsplash.com/photo-1702982852429-e0d0b27eb990?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxicmlnYWRlaXJvfGVufDB8fHx8MTc2NDM0OTQzOHww&ixlib=rb-4.1.0&q=85\" alt=\"Brigadeiros Gourmet\">
+                        </div>
+                        <div class=\"gallery-item\">
+                            <img src=\"https://images.unsplash.com/photo-1693060236785-206a880f8573?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0NDN8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Personalizado\">
+                        </div>
+                    </div>
+                </div>
+                <button class=\"gallery-control next\" aria-label=\"Próximo\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">
+                        <polyline points=\"9 18 15 12 9 6\"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div class=\"gallery-dots\"></div>
+        </div>
+    </section>
+
+    <!-- Bolos de Festa -->
+    <section id=\"bolos-festa\" class=\"product-section\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Bolos de Festa</h2>
+            <p class=\"section-description\">Criações únicas que são o centro das atenções em qualquer celebração</p>
+            <div class=\"product-grid\">
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1624966436626-77482d9c7cc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxkZWNvcmF0ZWQlMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0MjZ8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Black Forest\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos Clássicos</h3>
+                        <p>Sabores tradicionais com decoração elegante</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1714386351168-2567bc57efad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxkZWNvcmF0ZWQlMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0MjZ8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Festivo\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos Temáticos</h3>
+                        <p>Perfeitos para celebrações especiais</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1632681382835-87ad6c0bf9bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxkZWNvcmF0ZWQlMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0MjZ8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo de Camadas\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos de Camadas</h3>
+                        <p>Visual impressionante e sabor inesquecível</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bolos de Aniversário -->
+    <section id=\"bolos-aniversario\" class=\"product-section alternate\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Bolos de Aniversário</h2>
+            <p class=\"section-description\">Faça do seu dia especial ainda mais memorável</p>
+            <div class=\"product-grid\">
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMGNha2VzfGVufDB8fHx8MTc2NDM0OTQyMHww&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Happy Birthday\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolo com Drip</h3>
+                        <p>Chocolate derretido e decorações encantadoras</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1571622840901-92ae138bd36e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxiaXJ0aGRheSUyMGNha2VzfGVufDB8fHx8MTc2NDM0OTQyMHww&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Elegante\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolo com Frutas</h3>
+                        <p>Frescor e sofisticação em cada fatia</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1693059740560-21151639561f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxiaXJ0aGRheSUyMGNha2VzfGVufDB8fHx8MTc2NDM0OTQyMHww&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Dourado\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolo Glamouroso</h3>
+                        <p>Detalhes dourados para ocasiões especiais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doces Gourmet -->
+    <section id=\"doces-gourmet\" class=\"product-section\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Doces Gourmet</h2>
+            <p class=\"section-description\">Pequenas delícias que encantam pelo sabor e apresentação</p>
+            <div class=\"product-grid\">
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1614631016624-cb89bceec02c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwc3dlZXRzfGVufDB8fHx8MTc2NDM0OTQzMXww&ixlib=rb-4.1.0&q=85\" alt=\"Chocolates Gourmet\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Chocolates Premium</h3>
+                        <p>Seleção refinada de chocolates artesanais</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1587334105727-becaf18a5ec5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxnb3VybWV0JTIwc3dlZXRzfGVufDB8fHx8MTc2NDM0OTQzMXww&ixlib=rb-4.1.0&q=85\" alt=\"Marshmallows Artesanais\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Marshmallows Artesanais</h3>
+                        <p>Macios, coloridos e irresistíveis</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1759146136291-49cabecf8ad0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwc3dlZXRzfGVufDB8fHx8MTc2NDM0OTQzMXww&ixlib=rb-4.1.0&q=85\" alt=\"Doces Finos\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Trufas e Bombons</h3>
+                        <p>Experiência gourmet em cada mordida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doces -->
+    <section id=\"doces\" class=\"product-section alternate\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Doces Tradicionais</h2>
+            <p class=\"section-description\">Brigadeiros e docinhos que conquistam todos os paladares</p>
+            <div class=\"product-grid\">
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1702982852429-e0d0b27eb990?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxicmlnYWRlaXJvfGVufDB8fHx8MTc2NDM0OTQzOHww&ixlib=rb-4.1.0&q=85\" alt=\"Brigadeiros\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Brigadeiros Tradicionais</h3>
+                        <p>O clássico brasileiro em sua melhor versão</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1702982841001-f65535a5a40b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxicmlnYWRlaXJvfGVufDB8fHx8MTc2NDM0OTQzOHww&ixlib=rb-4.1.0&q=85\" alt=\"Brigadeiros Decorados\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Brigadeiros de Colher</h3>
+                        <p>Cremosos e irresistíveis</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1630953899906-d16511a72558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxicmlnYWRlaXJvfGVufDB8fHx8MTc2NDM0OTQzOHww&ixlib=rb-4.1.0&q=85\" alt=\"Brigadeiros Sortidos\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Variedade de Sabores</h3>
+                        <p>Beijinho, cajuzinho e muito mais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bolos Personalizados -->
+    <section id=\"bolos-personalizados\" class=\"product-section\">
+        <div class=\"container\">
+            <h2 class=\"section-title\">Bolos Personalizados</h2>
+            <p class=\"section-description\">Transformamos suas ideias em realidade comestível</p>
+            <div class=\"product-grid\">
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1693060236785-206a880f8573?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0NDN8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Temático\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos Temáticos</h3>
+                        <p>Personagens e temas infantis</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.unsplash.com/photo-1693040743049-71cd4630ab5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxjdXN0b20lMjBjYWtlc3xlbnwwfHx8fDE3NjQzNDk0NDN8MA&ixlib=rb-4.1.0&q=85\" alt=\"Bolo Decorado\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos Artísticos</h3>
+                        <p>Criações únicas e sofisticadas</p>
+                    </div>
+                </div>
+                <div class=\"product-card\">
+                    <div class=\"product-image\">
+                        <img src=\"https://images.pexels.com/photos/2337821/pexels-photo-2337821.jpeg\" alt=\"Bolo Criativo\">
+                    </div>
+                    <div class=\"product-info\">
+                        <h3>Bolos Corporativos</h3>
+                        <p>Para eventos empresariais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id=\"sobre\" class=\"about-section\">
+        <div class=\"container\">
+            <div class=\"about-content\">
+                <div class=\"about-text\">
+                    <h2 class=\"section-title\">Sobre a Cold Cake e Cia</h2>
+                    <p>Na <strong>Cold Cake e Cia</strong>, acreditamos que cada celebração merece um toque especial. Nossa paixão por confeitaria nos impulsiona a criar bolos e doces artesanais que não são apenas deliciosos, mas também verdadeiras obras de arte.</p>
+                    <p>Com anos de experiência e dedicação, transformamos ingredientes selecionados em experiências gastronômicas inesquecíveis. Cada receita é cuidadosamente desenvolvida, cada decoração é pensada nos mínimos detalhes.</p>
+                    <p>Nosso compromisso é fazer parte dos seus momentos mais especiais, adoçando memórias que durarão para sempre.</p>
+                    <div class=\"about-features\">
+                        <div class=\"feature-item\">
+                            <div class=\"feature-icon\">✨</div>
+                            <h3>Qualidade Premium</h3>
+                            <p>Ingredientes selecionados</p>
+                        </div>
+                        <div class=\"feature-item\">
+                            <div class=\"feature-icon\">🎨</div>
+                            <h3>Personalização Total</h3>
+                            <p>Seu sonho, nossa criação</p>
+                        </div>
+                        <div class=\"feature-item\">
+                            <div class=\"feature-icon\">💝</div>
+                            <h3>Feito com Amor</h3>
+                            <p>Dedicação em cada detalhe</p>
+                        </div>
+                    </div>
+                    <a href=\"https://wa.me/5565999999999\" class=\"about-cta\" target=\"_blank\">Entre em Contato</a>
+                </div>
+                <div class=\"about-image\">
+                    <img src=\"https://images.unsplash.com/photo-1556745750-68295fefafc5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MXwxfHNlYXJjaHwxfHxiYWtlcnl8ZW58MHx8fHwxNzY0MzQ5NDQ5fDA&ixlib=rb-4.1.0&q=85\" alt=\"Nossa Confeitaria\">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        <div class=\"container\">
+            <div class=\"footer-content\">
+                <div class=\"footer-section\">
+                    <h3>Cold Cake e Cia</h3>
+                    <p>Transformando celebrações em momentos inesquecíveis desde 2020.</p>
+                </div>
+                <div class=\"footer-section\">
+                    <h3>Contato</h3>
+                    <p>WhatsApp: (65) 99999-9999</p>
+                    <p>Atendimento: Seg - Sáb</p>
+                    <p>Das 9h às 18h</p>
+                </div>
+                <div class=\"footer-section\">
+                    <h3>Navegação</h3>
+                    <a href=\"#home\">Início</a>
+                    <a href=\"#bolos-festa\">Bolos de Festa</a>
+                    <a href=\"#doces-gourmet\">Doces Gourmet</a>
+                    <a href=\"#sobre\">Sobre</a>
+                </div>
+            </div>
+            <div class=\"footer-bottom\">
+                <p>&copy; 2025 Cold Cake e Cia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=\"script.js\"></script>
+</body>
+</html>
+"
+Observation: Create successful: /app/coldcake-site/index.html
